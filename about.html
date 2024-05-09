@@ -18,19 +18,31 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>pic portfolio</h1>
         <div class="container-fluid">
             <div class="jumbotron">
-                <h1>the galleries</h1>
+        <h1>Vacation Picture Portfolio</h1>
             </div>
         </div>
+        <img class="thumbnail center-block" src="https://th.bing.com/th/id/OIP.rkssXfnItOKaO5Tjeuug4QHaE7?rs=1&pid=ImgDetMain" width=400px height=300px alt="This is where the image would appear">
+        <h1 class="text-center" id="username">the reason that I have created this website is to help anyone trying to go on a vacation to find the best place possible and have the best expierience with their family that they could have.</h1>
+        <h1 class="text-center">the reason that I have created this website is to help anyone trying to go on a vacation to find the best place possible and have the best expierience with their family that they could have. The benefits of using this website is that it is completely free, and there are 10 absoluty amazing vacation locations represented in these  portfolio. Buy tickets to your dream vacation today!</h1>
+        
         <div class="container">
+            
+        <script>
+          if (!localStorage.getItem("username")) {
+                const username = prompt("What is your name? (don't worry, I'm not collecting this... look at the opensource code on GitHub!)");
+                localStorage.setItem("username", username);
+            }
+            
+        const username = localStorage.getItem("username");
+        document.getElementById("username").innerHTML = "Welcome to the Vacation Portfolio, " + username + "! Thanks for choosing this website for possible vacation spots!";
+        </script>
             <div class="jumbotron text-center">
                 <div class="jumbotron text-center">
-                    <a href="index.html"><h1>index</h1></a>
-                </div>
-                <div class="jumbotron text-center">
-                    <a href="contact.html"><h1>contact</h1></a>
+                    <a href="contact.html"><h1>1st page: vacation spots</h1></a>
+                    <a href="index.html"><h1>2nd page: vacation spots</h1></a>
+                    <a href="the-author.html"><h1>contact the author </h1></a>
                 </div>
                 </div>
             </div>
